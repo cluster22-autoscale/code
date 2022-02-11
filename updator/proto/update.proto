@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package updator;
+
+option go_package = "../updator";
+
+service Update {
+    rpc DoUpdate (UpdateRequest) returns (UpdateReply) {}
+}
+
+message UpdateRequest {
+    string podName = 1;
+    float delta = 2;
+    string resourceType = 3;
+}
+
+message UpdateReply {
+    int64 latestShare = 1;
+}

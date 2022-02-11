@@ -1,0 +1,5 @@
+{
+  "duration": "1000s",
+  "operations": ["/wrk2-api/post/compose", "/wrk2-api/user-timeline/read", "/wrk2-api/home-timeline/read"],
+  "rates": [500, 500, 500]
+}

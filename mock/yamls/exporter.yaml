@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: exporter
+  namespace: monitoring
+  labels:
+    app: example-exporter
+spec:
+  containers:
+  - name: exporter
+    image: example/exporter:v1
+    imagePullPolicy: IfNotPresent
+    ports:
+      - name: http-metrics
+        containerPort: 30576
+  restartPolicy: Always
