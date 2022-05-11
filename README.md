@@ -1,4 +1,4 @@
-## Codes of IWQoS'22 Autoscaler
+## Codes of Cluster'22 Autoscaler
 
 ### Prerequisites
 
